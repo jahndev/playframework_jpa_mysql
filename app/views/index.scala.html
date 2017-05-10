@@ -1,0 +1,12 @@
+@()
+
+@main("Prosoft Test part 2 - Jahn Arellano") {
+    <script type='text/javascript' src='@routes.Assets.at("javascripts/index.js")'></script>
+
+    <ul id="employee"></ul>
+
+    <form method="POST" action="@routes.EmployeeController.addEmployee()">
+        <input type="text" name="name"/>
+        <button>Add Employee</button>
+    </form>
+}
